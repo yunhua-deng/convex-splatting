@@ -229,7 +229,7 @@ def training_report(tb_writer, iteration, Ll1, loss, l1_loss, elapsed, testing_i
 
         if tb_writer:
             tb_writer.add_histogram("scene/opacity_histogram", scene.convexes.get_opacity, iteration)
-            tb_writer.add_scalar('total_points', scene.convexes.get_xyz.shape[0], iteration)
+            tb_writer.add_scalar('total_points', scene.convexes.get_convex_points.shape[0], iteration)
         torch.cuda.empty_cache()
 
 if __name__ == "__main__":
