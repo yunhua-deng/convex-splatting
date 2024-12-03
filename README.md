@@ -24,16 +24,11 @@ Our work represents a significant advancement in radiance field rendering by int
 
 ## BibTeX
 ```bibtex
-@article{Held20243DConvex,
-title = {{3D} Convex Splatting: Radiance Field Rendering with {3D} Smooth Convexes},
-author = {Held, Jan and Vandeghen, Renaud and Hamdi, Abdullah and Deli{`e}ge, Adrien and Cioppa, Anthony and Giancola, Silvio and Vedaldi, Andrea and Ghanem, Bernard and Van Droogenbroeck, Marc},
-journal = {arXiv},
-volume = {abs/2411.14974},
-year = {2024},
-eprint = {2411.14974},
-eprinttype = {arXiv},
-doi = {10.48550/arXiv.2411.14974},
-url = {https://doi.org/10.48550/arXiv.2411.14974%7D
+@article{held20243d,
+  title={3D Convex Splatting: Radiance Field Rendering with 3D Smooth Convexes},
+  author={Held, Jan and Vandeghen, Renaud and Hamdi, Abdullah and Deliege, Adrien and Cioppa, Anthony and Giancola, Silvio and Vedaldi, Andrea and Ghanem, Bernard and Van Droogenbroeck, Marc},
+  journal={arXiv preprint arXiv:2411.14974},
+  year={2024}
 }
 ```
 
