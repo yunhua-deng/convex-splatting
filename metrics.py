@@ -31,6 +31,11 @@ import json
 from tqdm import tqdm
 from utils.image_utils import psnr
 from argparse import ArgumentParser
+import traceback
+import ssl
+
+# To globally disable SSL verification
+ssl._create_default_https_context = ssl._create_unverified_context
 
 def readImages(renders_dir, gt_dir):
     renders = []
@@ -102,6 +107,8 @@ def evaluate(model_paths):
                 json.dump(per_view_dict[scene_dir], fp, indent=True)
         except:
             print("Unable to compute metrics for model", scene_dir)
+            print(f"An error occurred: {e}")
+            traceback.print_exc()
 
 if __name__ == "__main__":
     device = torch.device("cuda:0")
